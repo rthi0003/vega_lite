@@ -8,20 +8,25 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
   
 </head>
 <body>
-  
+
+<h1>Assignment 2</h1>
+
+<h2>This is my first visualisation</h2>
 <div id="choropleth_map"></div>
 
-<script type="text/javascript">
+<h2>This is my second visualisation</h2>
+<div id="scatter_plot"></div>
 
-  var spec2 = "js/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+<script type="text/javascript">
+  var vis1 = "visualization.vl.json";
+  
+  vegaEmbed('#choropleth_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>
-
+  
 </body>
 </html>
